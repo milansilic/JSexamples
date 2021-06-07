@@ -1,0 +1,101 @@
+.acc-main-sec{
+    padding: 20px 0 40px 0;
+}
+
+.acc1, .acc2{
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.acc1{
+    li{
+        background-color: gainsboro;
+        color: green;
+        margin: 0 0 1rem 0;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
+
+        h4{
+            padding: 20px;
+            min-height: 3.5rem;
+            line-height: 1.25rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+            &::after{
+                content: '+';
+                font-size: 22px;
+                font-weight: 700;
+                position: absolute;
+                right: 20px;
+            }
+            &.active4::after{
+                content: '-';
+            }
+        }
+
+        .acc1-cont{
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .2s ease-out;
+        
+            p{
+                padding: 1rem;
+                line-height: 1.5rem;
+                border-top: 3px solid red;
+                border-image: linear-gradient(to right, green, red, orange, blue) 1;
+            }
+        }
+    }
+}
+
+.acc2{
+    color: #222;
+    &>*{background-color: rgba($cJScompl, .4);}
+
+    h4{
+        border-radius: 6px 6px 0 0;
+        padding: 16px 24px;
+        position: relative;
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+        }
+
+        &::after{border: px solid red;
+            content: ' ';
+            width: 22px;
+            height: 22px;
+            @include bgImg(no-repeat,center,center,cover);
+            background-image: url('../../ico/arrowDown.svg');
+            position: absolute;
+            right: 18px;
+            top: 17px;
+            transition: all .2s ease-out;
+        }
+
+        &.active2::after{
+            content: '';
+            transform: rotate(-180deg);
+        }
+    }
+
+    li{
+        border-radius: 0 0 6px 6px;
+        max-height: 0px;
+        overflow: hidden;
+        padding: 0px;
+        margin: 0 0 12px 0;
+        transition: .3s ease-out;
+    
+        .acc2-p{border-top: 1px solid #bbb;
+            padding: 24px 40px;
+        }
+    }
+}
+
+.active2{
+    text-decoration: underline;
+}

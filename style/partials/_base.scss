@@ -1,0 +1,57 @@
+@font-face{
+    src:url('../../fonts/OpenSans-Regular.ttf');
+    font-family:'OpenSans';
+};
+
+@font-face{
+    src:url('../../fonts/OpenSans-ExtraBold.ttf');
+    font-family:'OpenSans800';
+};
+
+*{box-sizing:border-box;margin:0px;padding:0px;font-family:'OpenSans';}
+ul{list-style: none;}
+
+$cJS:#f7df1e;
+$cJScompl: #1e37f7;
+$cJScompl1: #711ef7;
+$cJScompl2: #1ea4f7;
+$cJSmono: #decc47;
+$cg:#aaa;
+$cw:#fff;
+
+$minMobileL:576px;
+$minTablet:768px;
+$minDesktop:1024px;
+$minDesktopL:1200px;
+$minDesktopMax:1400px;
+
+@mixin fl1($flDir, $flWr, $juCo, $alIt, $alCon){
+    display: flex;
+    flex-flow: $flDir $flWr;
+    justify-content: $juCo;
+    align-items: $alIt;
+    align-content: $alCon;
+}
+
+@mixin bgImg($bgRep, $bgPos1, $bgPos2, $bgSize){
+    background-repeat: $bgRep;
+    background-position: $bgPos1 $bgPos2;
+    background-size: $bgSize;
+}
+
+body{
+    @include fl1(column,null,null,null,null);
+    background-color: rgba($cg, .3);
+    
+    main{padding: 90px 0 60px 0;}
+    footer{margin-top: auto !important;}
+}
+
+hgroup{
+    text-align: center;
+    margin: 30px 0;
+}
+
+.visable{
+    display: block !important;
+}

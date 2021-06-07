@@ -1,0 +1,27 @@
+footer{
+    background-color: $cg;
+    text-align: center;
+    padding: 20px;
+
+    ul{
+        @include fl1(null,wrap,center,center,null);
+        margin: 20px 0 30px 0;
+
+        li{
+            padding: 2px 12px;
+            border-right: 1px solid $cJS;
+            &:last-child{
+                border-right: none;
+            }
+
+            a{
+                color: $cJScompl;
+                text-decoration: none;
+                &:hover{
+                    color: $cJScompl1;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

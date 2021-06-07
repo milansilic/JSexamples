@@ -1,0 +1,51 @@
+.index-main-wr{
+    @include fl1(null,wrap,space-evenly,center,null);
+    max-width: 800px;
+    padding: 80px 0 0 0;
+    margin:0 auto;
+
+    .card{
+        @include fl1(null,wrap,center,center,space-between);
+        border-radius: 8px;
+        background-image: linear-gradient(120deg, rgba($cJScompl2, 1), rgba($cJScompl1, 1));
+        width: 150px;
+        height: 180px;
+        box-shadow: 0 0 12px 0 rgba(0,0,0,0.5);
+        padding: 24px 0 18px 0;
+        margin: 20px 72px 120px 72px;
+        transition: .3s ease-out;
+        cursor: pointer;
+        &:hover{
+            box-shadow: 0 0 15px 0 rgba(0,0,0,0.8);
+            & figure{
+                background-size: 55%;
+                box-shadow: 0 0 7px rgba($cw, .5);
+            }
+            & h3{
+                text-shadow: 0 0 21px rgba($cw, .5);
+            }
+        } 
+
+        figure{
+            @include bgImg(no-repeat,center,center,50%);
+            border: 10px solid $cJSmono;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            background-color: $cJS;
+            transition: all .2s ease-out;
+
+            &.tab{background-image: url('../../ico/cardTab1.svg');}
+            &.acc{background-image: url('../../ico/cardAcc1.svg');}
+            &.car{background-image: url('../../ico/cardCar4.svg');}
+            &.slide{background-image: url('../../ico/cardSlide.svg');}
+        }
+
+        h3{
+            color: $cw;
+            width: 100%;
+            text-align: center;
+            transition: all .2s ease-out;
+        }
+    }
+}
