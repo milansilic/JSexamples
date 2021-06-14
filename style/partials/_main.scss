@@ -35,10 +35,10 @@
             background-color: $cJS;
             transition: all .2s ease-out;
 
-            &.tab{background-image: url('../../ico/cardTab1.svg');}
-            &.acc{background-image: url('../../ico/cardAcc1.svg');}
-            &.car{background-image: url('../../ico/cardCar4.svg');}
-            &.slide{background-image: url('../../ico/cardSlide.svg');}
+            &.tab{background-image: url('../../ico/cardTab.svg');}
+            &.acc{background-image: url('../../ico/cardAcc.svg');}
+            &.car{background-image: url('../../ico/cardCar.svg');}
+            &.slide{background-image: url('../../ico/cardSlid.svg');}
         }
 
         h3{

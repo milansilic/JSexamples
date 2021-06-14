@@ -1,33 +1,24 @@
-.tab-main-sec{
-    padding: 20px 0 40px 0;
+#tabs1{
 
-    .tabs1{
-        width: 80%;
-        max-width: 800px;
-        margin: 0 auto;
+    header{
+        @include fl1(null,null,null,center,null);
 
-        header{
-            @include fl1(null,null,null,center,null);
-    
-            button{
-                border: none;
-                flex-grow: 1;
-                text-align: center;
-                cursor: pointer;
-                padding: 20px 0;
-            }
+        button{
+            border: none;
+            flex-grow: 1;
+            text-align: center;
+            cursor: pointer;
+            padding: 20px 0;
         }
-    
-        article{
-            display: none;
-            padding: 40px;
-            &>*{border: px solid red;
-                padding: 20px;
-            }
-        }
-    
-        article:nth-of-type(1), header button:nth-of-type(1){background-color: $cJScompl2;}
-        article:nth-of-type(2), header button:nth-of-type(2){background-color: rgba($cJSmono, 1);}
-        article:nth-of-type(3), header button:nth-of-type(3){background-color: rgba($cJScompl1, .5);}
-    } 
+    }
+
+    article{
+        display: none;
+        padding: 40px;
+        &>*{padding: 20px;}
+    }
+
+    article:nth-of-type(1), header button:nth-of-type(1){background-color: $cJScompl2;}
+    article:nth-of-type(2), header button:nth-of-type(2){background-color: rgba($cJSmono, 1);}
+    article:nth-of-type(3), header button:nth-of-type(3){background-color: rgba($cJScompl1, .5);}
 }

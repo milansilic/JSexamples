@@ -1,91 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Javascript examples">
-    <meta name="keywords" content="JavaScript">
-    <meta name="author" content="Milan Silic">
-    <title>JS Examples</title>
-    <link rel="icon" href="ico/js.svg">
-    <link rel="stylesheet" href="style/css/style.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Javascript examples">
+  <meta name="keywords" content="JavaScript">
+  <meta name="author" content="Milan Silic">
+  <title>JS Examples</title>
+  <link rel="icon" href="ico/js.svg">
+  <link rel="stylesheet" href="style/css/style.min.css">
 </head>
+
 <body>
-<header>
-  <a class="logo" href="index.html"></a>
-  <h1>Javascript examples</h1>
-</header>
+  <header>
+    <a class="logo" href="index.html"></a>
+    <h1>Javascript <span>examples</span></h1>
+  </header>
 
-<div class="slideshow-container">
+  <main>
+    <!-- CAROUSEL 1 -->
+    <section class="main-sec">
+      <hgroup>
+        <h3>Image Carousel 1</h3>
+        <h6>with basic controls</h6>
+      </hgroup>
+      <div class="carousel" id="car1">
+        <figure></figure>
+        <figure></figure>
+        <figure></figure>
+        <figure></figure>
+        <button></button>
+        <button></button>
+      </div>
+    </section>
+    <!-- CAROUSEL 2 -->
+    <section class="main-sec">
+      <hgroup>
+        <h3>Image Carousel 2</h3>
+        <h6>with additional controls</h6>
+      </hgroup>
+      <div class="carousel" id="car2">
+        <figure></figure>
+        <figure></figure>
+        <figure></figure>
+        <figure></figure>
+        <button></button>
+        <button></button>
+      </div>
+      <div class="dots" id="dts1">
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+      </div>
+    </section>
+    <!-- CAROUSEL 3 -->
+    <section class="main-sec">
+      <hgroup>
+        <h3>Image Carousel 3</h3>
+        <h6>auto slide, with controls</h6>
+      </hgroup>
+      <div class="carousel" id="car3">
+        <figure></figure>
+        <figure></figure>
+        <figure></figure>
+        <figure></figure>
+        <button></button>
+        <button></button>
+      </div>
+      <div class="dots" id="dts2">
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+      </div>
+    </section>
+  </main>
 
-    <div class="mySlides">
-      <img src="img/06.jpg" style="width:100%">
-    </div>
-    
-    <div class="mySlides">
-      <img src="img/07.jpg" style="width:100%">
-    </div>
-    
-    <div class="mySlides">
-      <img src="img/08.jpg" style="width:100%">
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    
-</div><br>
-    
-<div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span> 
-    <span class="dot" onclick="currentSlide(2)"></span> 
-    <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-
-<br><hr><br>
-
-
-<!-- MOJ PRIMER!!! -->
-
-<figure class="mojSlajd img1"></figure>
-<figure class="mojSlajd img2"></figure>
-<figure class="mojSlajd img3"></figure>
-<figure class="mojSlajd img4"></figure>
-
-<span class="dot" onclick="trenutniSlajd(1)"></span>
-<span class="dot" onclick="trenutniSlajd(2)"></span>
-<span class="dot" onclick="trenutniSlajd(3)"></span>
-<span class="dot" onclick="trenutniSlajd(4)"></span>
-
-<button id="levo" onclick="saltajSlajd(-1)">levo</button>
-<button id="levo" onclick="saltajSlajd(1)">desno</button>
-
-
-<!-- <div class="mySlides">
-    <img src="img/06.jpg" style="width:100%">
-</div>
-<div class="mySlides">
-    <img src="img/07.jpg" style="width:100%">
-</div>
-<div class="mySlides">
-    <img src="img/08.jpg" style="width:100%">
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
--->
-
-<footer>
-  <ul>
+  <footer>
+    <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="tabs.html">Tabs</a></li>
       <li><a href="accordion.html">Accordion</a></li>
       <li><a href="carousel.html">Carousel</a></li>
-      <li><a href="#">Slide in</a></li>
-  </ul>
-  <small>&#169; Milan Silic 2021<br>All Rights Reserved</small>
-</footer>
+      <li><a href="slide.html">Slide in</a></li>
+    </ul>
+    <small>&#169; Milan Silic 2021<br>All Rights Reserved</small>
+  </footer>
 
-<script src="script/carousel.js"></script>
+  <script src="script/script.js"></script>
+  <script src="script/carousel.js"></script>
 </body>
+
 </html>

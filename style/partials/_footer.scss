@@ -1,7 +1,7 @@
 footer{
     background-color: $cg;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0 12px 0;
 
     ul{
         @include fl1(null,wrap,center,center,null);
