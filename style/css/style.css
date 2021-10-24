@@ -385,4 +385,71 @@ footer ul li a:hover {
 }
 #car3 figure:nth-of-type(4) {
   background-image: url("../../img/12.jpg");
+}
+
+.car4 {
+  position: relative;
+  margin: 100px auto;
+}
+.car4 .car4-track-cont {
+  position: relative;
+  overflow: hidden;
+  margin: 40px auto;
+}
+.car4 .car4-track-cont .car4-track {
+  position: absolute;
+  left: 0px;
+  display: flex;
+  height: 100%;
+  list-style: none;
+  transition: all 0.4s ease-out;
+}
+.car4 .car4-track-cont .car4-track .car4-slide {
+  width: 600px;
+  height: 300px;
+}
+.car4 .car4-track-cont .car4-track .car4-slide > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.car4 .car4-butt-cont {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  width: 300px;
+  height: 8px;
+  background-color: silver;
+  margin: 40px auto;
+}
+.car4 .car4-butt-cont .car4-butt {
+  flex-grow: 1;
+  cursor: pointer;
+}
+.car4 .car4-butt-cont .car4-indicator {
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  background-color: rgba(30, 55, 247, 0.4);
+  width: 33.3%;
+  height: 100%;
+  transition: all 0.4s ease-out;
+  cursor: pointer;
+}
+
+.car5 {
+  width: 600px !important;
+  margin: auto;
+  overflow: hidden;
+}
+.car5 .car5-slide {
+  display: flex;
+  width: 100%;
+  height: 500px;
+}
+.car5 .car5-slide img {
+  width: 600px;
+  object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
